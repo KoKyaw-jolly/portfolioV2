@@ -1,0 +1,36 @@
+.skill-wrapper{
+    margin-bottom: 60px;
+}
+.skill-wrapper__skill-content-wrapper{
+    padding: 0 20px 0 0;
+}
+.skill-wrapper__skill-content-wrapper:last-child{
+    padding: 0 0 0 20px;
+}
+.skill-wrapper__skill-content-wrapper__skill-content{
+    padding: 30px;
+    border-radius: 15px;
+    height: 100%;
+}
+.skill-design-icon i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    color: var(--main-color);
+    font-size: 40px;
+    border-radius: 15px;
+    line-height: 0;
+}
+
+@media (max-width: 767px){
+    
+.skill-wrapper__sill-content-wrapper{
+    padding: 0;
+}
+.skill-wrapper__sill-content-wrapper:last-child{
+    padding: 0;
+}
+}

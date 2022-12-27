@@ -1,0 +1,96 @@
+.hello-wrapper {
+    margin-bottom: 5vw;
+}
+
+.hello-wrapper .hello-wrapper__hello-img-wrapper {
+    padding-right: 0;
+    padding-left: 20px;
+}
+
+.hello-wrapper__hello-img-wrapper__hello-img {
+    padding: 5vw;
+    border-radius: 15px;
+}
+
+.hello-wrapper .hello-wrapper__hello-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+.hello-wrapper__hello-text-wrapper__hello-name {
+    color: var(--main-color);
+    font-size: 6vw;
+    font-weight: 700;
+}
+
+.hello-wrapper__hello-text-wrapper__hello-bar {
+    height: 6px;
+    width: 30vw;
+    background-color: var(--main-color);
+    display: block;
+    border-radius: 3px;
+}
+
+.hello-wrapper__hello-text-wrapper__hello-position {
+    font-size: 4vw;
+    color: var(--main-color);
+}
+
+.hello-wrapper__hello-text-wrapper__hello-icon-group{
+    display: flex;
+    margin-top: 10px;
+}
+.hello-wrapper__hello-text-wrapper__hello-icon-group a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    line-height: 0;
+    color: var(--main-color);
+    font-size: 18px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.hello-wrapper__hello-text-wrapper__hello-icon-group a:hover{
+    transform: translate(0,-10%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (max-width: 767px) {
+    .hello-wrapper .hello-wrapper__hello-img-wrapper {
+        padding: 0;
+    }
+
+    .hello-wrapper {
+        margin-bottom: 8vw;
+    }
+
+    .hello-wrapper .hello-wrapper__hello-text-wrapper {
+        padding: 0;
+        margin-top: 5vw;
+    }
+
+    .hello-wrapper__hello-text-wrapper {
+        align-items: center;
+    }
+
+    .hello-wrapper .hello-wrapper__hello-text-wrapper__hello-name {
+        font-size: 12vw;
+        text-align: center;
+    }
+
+    .hello-wrapper__hello-text-wrapper__hello-bar {
+        width: 60vw;
+    }
+
+    .hello-wrapper .hello-wrapper__hello-text-wrapper__hello-position {
+        font-size: 8vw;
+        text-align: center;
+    }
+}

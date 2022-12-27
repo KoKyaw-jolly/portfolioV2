@@ -1,0 +1,24 @@
+.portfolio-wrapper{
+    margin-bottom: 30px;
+}
+.portfolio-wrapper__sikll-content-wrapper:nth-child(2){
+    padding: 0 20px;
+}
+.portfolio-wrapper__portfolio-content-wrapper__portfolio-content{
+    padding: 30px;
+    border-radius: 15px;
+    height: 100%;
+}
+.portfolio-img {
+    width: 100%;
+}
+
+@media (max-width: 767px){
+    
+.portfolio-wrapper__sill-content-wrapper{
+    padding: 0;
+}
+.portfolio-wrapper__sill-content-wrapper:last-child{
+    padding: 0;
+}
+}
