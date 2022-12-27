@@ -1,19 +1,24 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
-:root{
-    --background--color: linear-gradient(47deg, rgba(180,176,255,1) 0%, rgba(255,120,236,1) 33%, rgba(165,209,255,1) 71%, rgba(246,108,247,1) 100%);;
-    --dark-background--color:linear-gradient(47deg, rgba(2,0,36,1) 0%, rgba(121,9,105,1) 33%, rgba(0,100,204,1) 71%, rgba(22,0,135,1) 100%);
+:root {
+    --background--color: linear-gradient(47deg, rgba(180, 176, 255, 1) 0%, rgba(255, 120, 236, 1) 33%, rgba(165, 209, 255, 1) 71%, rgba(246, 108, 247, 1) 100%);
     --glass-bg-color: rgba(255, 255, 255, 0.4);
-    --dark-glass-bg-color: rgba(0, 0, 0, 0.4);
 
     /* color */
     --main-color: #333;
     --second-color: #fff;
 }
 
-body{
-    background:var(--background--color);
+.dark {
+    --background--color: linear-gradient(47deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 105, 1) 33%, rgba(0, 100, 204, 1) 71%, rgba(22, 0, 135, 1) 100%);
+    --glass-bg-color: rgba(0, 0, 0, 0.4);
+    /* color */
+    --main-color: #fff;
+    --second-color: #333;
+}
+
+body {
+    background: var(--background--color);
     min-height: 100vh;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.3rem;
@@ -21,7 +26,7 @@ body{
     color: var(--main-color);
 }
 
-.glass-bg{
+.glass-bg {
     background-color: var(--glass-bg-color);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
@@ -29,10 +34,10 @@ body{
 }
 
 /* nav header */
-.nav-header{
+.nav-header {
     display: flex;
     justify-content: center;
-    
+
     margin: 5vw;
     border-radius: 15px;
     position: fixed;
@@ -42,19 +47,40 @@ body{
     z-index: 999998;
     padding: 0;
 }
-.nav-item{
+
+.nav-item {
     min-width: 120px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.nav-item .nav-link{
+
+.nav-item .nav-link {
     color: var(--main-color);
     font-size: 1.6rem;
     font-weight: bold;
 }
-.theme-btn{
+
+.nav-space {
+    width: 80vw;
+    transform: translateY(-100%);
+    margin: -10vw 5vw 0;
+    height: 54px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    min-height: 54px;
+    width: 90vw;
+    margin: 0 5vw;
+    margin-bottom: 30px;
+}
+
+.theme-btn {
     position: absolute;
     top: 0;
     right: 10px;
@@ -65,21 +91,24 @@ body{
     justify-content: center;
     color: var(--main-color);
 }
-.theme-btn i{
+
+.theme-btn i {
     font-size: 25px;
     cursor: pointer;
     transition: all 0.2s;
 }
-.theme-btn i:hover{
+
+.theme-btn i:hover {
     font-size: 30px;
 }
 
-.content-wrapper{
+.content-wrapper {
     margin: 15vw 5vw 0;
     width: 90vw;
 }
 
-.row,p {
+.row,
+p {
     margin: 0;
 }
 
@@ -90,10 +119,9 @@ body{
     width: 100%;
 }
 
-.common-button{
-    height: 40px;
+.common-button {
+    height: 45px;
     width: max-content;
-    font-size: 16px;
     font-weight: 700;
     padding: 0 20px;
     border-radius: 20px;
@@ -102,22 +130,56 @@ body{
     cursor: pointer;
     transition: all 0.5s;
 }
-.common-button:hover{
-    transform: translate(0,-10%);
+
+.common-button:hover {
+    transform: translate(0, -10%);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 576px) {
+    .header {
+        font-size: 1.3rem;
+    }
+
+    body {
+        font-size: 1.1rem;
+    }
+
+    .common-button {
+        height: 40px;
+        border-radius: 20px;
+        padding: 0px 30px;
+    }
+}
+
+@media (max-width: 767px) {
     .nav-header {
         margin: 8vw;
         width: 84vw;
     }
-    .content-wrapper{
+
+    .content-wrapper {
         margin: 22vw 8vw 0;
         width: 84vw;
     }
-    .nav-pills{
+
+    .nav-pills {
         display: none;
     }
 }
 
+@media (min-width: 1200px) {
+    body {
+        font-size: 1.6rem;
+    }
+
+    .header {
+        font-size: 1.9rem;
+    }
+
+    .common-button {
+        height: 56px;
+        border-radius: 28px;
+        padding: 0px 30px;
+    }
+}

@@ -49,4 +49,15 @@
     .about-wrapper__about-content-wrapper__about-content-container {
         padding: 0;
     }
+
+    .download-btn {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-wrapper__about-content-wrapper__about-content-container .about-content {
+        line-height: 3.5rem;
+    }
 }
