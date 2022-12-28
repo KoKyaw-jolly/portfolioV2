@@ -102,6 +102,20 @@ body {
     font-size: 30px;
 }
 
+.k-icon {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 25px;
+    display: grid;
+    align-items: center;
+}
+
+.k-icon img {
+    width: 35px;
+    height: 35px;
+}
+
 .content-wrapper {
     margin: calc(5vw + 65px) 5vw 0;
     width: 90vw;
@@ -135,17 +149,18 @@ p {
     transform: translate(0, -10%);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.modal{
+
+.modal {
     z-index: 999999;
     margin: 0;
     padding: 0;
 }
 
-.model-wrapper{
+.model-wrapper {
     display: flex;
 }
 
-.modal-dialog{
+.modal-dialog {
     min-width: 50vw;
     margin: 30px auto;
     padding: 30px;
@@ -153,49 +168,59 @@ p {
     height: max-content;
 }
 
-.modal-content{
+.modal-content {
     background-color: transparent;
     border: none;
 }
-.modal-content img{
+
+.modal-content img {
     width: 80%;
-    margin:auto;
+    margin: auto;
     border-radius: 10px;
     margin-bottom: 30px;
 }
+
 .modal-content .model-label {
     margin-bottom: 20px;
 }
-.modal-content .model-btn-gp{
+
+.modal-content .model-btn-gp {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.modal-content .model-btn-gp .model-close-btn{
+
+.modal-content .model-btn-gp .model-close-btn {
     margin-right: 30px;
 }
-.modal-header{
+
+.modal-header {
     padding-top: 0;
     border: none;
     justify-content: center;
 }
-.modal-title{
+
+.modal-title {
     font-size: 1.8rem;
     font-weight: bold;
 }
-.modal-body{
+
+.modal-body {
     font-size: 1.5rem;
     text-align: center;
     padding-bottom: 32px;
 }
-.modal-footer{
+
+.modal-footer {
     padding: 0;
     padding-top: 15px;
 }
+
 @media (max-width: 576px) {
-    .modal-dialog{
+    .modal-dialog {
         margin: 30px;
     }
+
     .header {
         font-size: 1.3rem;
     }
@@ -209,10 +234,10 @@ p {
         border-radius: 20px;
         padding: 0px 30px;
     }
-    
-.modal-content .model-btn-gp .model-close-btn{
-    margin-right: 20px;
-}
+
+    .modal-content .model-btn-gp .model-close-btn {
+        margin-right: 20px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -229,14 +254,14 @@ p {
     .nav-pills {
         display: none;
     }
-    
-.modal-content .model-btn-gp .model-close-btn{
-    margin-right: 25px;
-}
+
+    .modal-content .model-btn-gp .model-close-btn {
+        margin-right: 25px;
+    }
 }
 
 @media (min-width: 1200px) {
-    
+
     body {
         font-size: 1.5rem;
     }
@@ -244,19 +269,24 @@ p {
     .header {
         font-size: 1.rem;
     }
-    .nav-header{
-    margin: 3vw 5vw;
+
+    .nav-header {
+        margin: 3vw 5vw;
     }
-    .nav-item .nav-link{
+
+    .nav-item .nav-link {
         font-size: 2rem;
     }
-    .theme-btn{
+
+    .theme-btn {
         width: 65px;
         height: 65px;
     }
-    .theme-btn i{
+
+    .theme-btn i {
         font-size: 30px;
     }
+
     .common-button {
         height: 56px;
         border-radius: 28px;

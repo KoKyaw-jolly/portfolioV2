@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon_io/favicon-16x16.png">
     <title>Ko Ko Kyaw</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,6 +23,9 @@
 
     <!-- nav -->
     <header class="nav-header glass-bg">
+        <div class="k-icon" onclick="themeClick()">
+            <img src="assets/images/favicon_io/android-chrome-512x512.png">
+        </div>
         <ul class="nav nav-pills">
             <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
@@ -59,7 +63,7 @@
             <div id="about" class="nav-space"></div><!-- nav space -->
             <div class="col-sm-12 col-md-6 about-wrapper__about-img-wrapper">
                 <div class="glass-bg about-wrapper__about-img-wrapper__about-img">
-                    <img src="assets/images/about_photo.jpg" alt="">
+                    <img src="assets/images/profile-pic2.png" alt="">
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 about-wrapper__about-content-wrapper">
@@ -70,7 +74,8 @@
                         Photoshop, I can produce prototype, wireframe, and mockup designs. I am also skilled in
                         designing and developing templates by using HTML, CSS, JS, Bootstrap, jQuery, and Angular. I do
                         think that helping your company or organization with my innovative idea would be a triumph.</p>
-                    <button class="glass-bg common-button download-btn" data-bs-toggle="modal" data-bs-target="#resumeDownload">Download Resume</button>
+                    <button class="glass-bg common-button download-btn" data-bs-toggle="modal"
+                        data-bs-target="#resumeDownload">Download Resume</button>
                 </div>
             </div>
         </div>
@@ -82,18 +87,22 @@
                         <i class="glass-bg bi bi-vector-pen"></i>
                     </div>
                     <br>
-                    <div class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facere
-                        fugiat placeat.</div>
+                    <div class="text-center">Website UI/UX design, Mobile UI, Prototype, Wireframe and Illustration Art
+                    </div>
                     <br>
-                    <p class="header">I created with:</p>
-                    <p class="text-center">HTML, CSS, SCSS, JS, PHP,
-                        <br> Mysql, VB6, MSSql
+                    <p class="header">I enjoy to create:</p>
+                    <p class="text-center">Colorful Design, User Friendly Design,
+                        <br>Logo, Animation
                     </p>
                     <br>
-                    <p class="header">Dev Tools:</p>
-                    <p class="text-center"> Angular (framework)<br _ngcontent-xno-c7=""> Bootstrap (v3, v4, v5 and
-                        icon)<br _ngcontent-xno-c7=""> VS code <br _ngcontent-xno-c7=""> Github<br _ngcontent-xno-c7="">
-                        GitLab<br _ngcontent-xno-c7=""> Sourcetree </p>
+                    <p class="header">Design Tools:</p>
+                    <p class="text-center">
+                        Adobe Illustrator<br>
+                        Adobe Photoshop<br>
+                        Figma<br>
+                        Adobe XD <br>
+                        Draw.io<br>
+                        Font Awesome</p>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 skill-wrapper__skill-content-wrapper">
@@ -102,22 +111,21 @@
                         <i class="glass-bg bi bi-terminal"></i>
                     </div>
                     <br>
-                    <div class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facere
-                        fugiat placeat.</div>
+                    <div class="text-center">Front-End development, Responsive Layout, Database, Window Application
+                    </div>
                     <br>
-                    <p class="header">I created with:</p>
+                    <p class="header">I developed with:</p>
                     <p class="text-center">HTML, CSS, SCSS, JS, PHP,
-                        <br> Mysql, VB6, MSSql
+                        <br> MySql, VB6, Microsoft SQL
                     </p>
                     <br>
                     <p class="header">Dev Tools:</p>
-                    <p class="text-center"> Angular (framework)<br _ngcontent-xno-c7=""> Bootstrap (v3, v4, v5 and
-                        icon)<br _ngcontent-xno-c7=""> VS code <br _ngcontent-xno-c7=""> Github<br _ngcontent-xno-c7="">
-                        GitLab<br _ngcontent-xno-c7=""> Sourcetree </p>
+                    <p class="text-center"> Angular (framework)<br> Bootstrap (v3, v4, v5 and
+                        icon)<br> VS code <br> Github<br>
+                        GitLab<br> Sourcetree </p>
                 </div>
             </div>
         </div>
-
 
         <div class="row portfolio-wrapper">
             <div id="portfolio" class="nav-space"></div><!-- nav space -->
@@ -128,9 +136,11 @@
                     <img src="assets/images/food shop.png" class="portfolio-img" alt="">
                     <br>
                     <p class="header text-start">Food Deli App</p>
-                    <p class="text-content">A sample wireframe prototype created with Figma for a Demo Food Delivery application. To get the best user experience, recommend using a laptop or computer.</p>
+                    <p class="text-content">A sample wireframe prototype created with Figma for a Demo Food Delivery
+                        application. To get the best user experience, recommend using a laptop or computer.</p>
                     <br>
-                    <button id="foodBtn" class="glass-bg common-button" data-bs-toggle="modal" data-bs-target="#portfolioModal">See More</button>
+                    <button id="foodBtn" class="glass-bg common-button" data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal">See More</button>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 portfolio-wrapper__portfolio-content-wrapper">
@@ -138,9 +148,13 @@
                     <img src="assets/images/book.png" class="portfolio-img" alt="">
                     <br>
                     <p class="header text-start">Onile Book Store</p>
-                    <p class="text-content">Using HTML, CSS, Bootstrap, JS, jQuery, PHP, and MySql, this project was created. Onile Book Store is a project that has Client View and Admin Panel, CRUD feature, section and login features and many other feature. However, this project is a small, simple, and demo. Checkout is available on GitHub.</p>
+                    <p class="text-content">Using HTML, CSS, Bootstrap, JS, jQuery, PHP, and MySql, this project was
+                        created. Onile Book Store is a project that has Client View and Admin Panel, CRUD
+                        feature, section and login features and many other feature. However, this project is a small,
+                        simple, and demo. Checkout is available on GitHub.</p>
                     <br>
-                    <button id="bookBtn" class="glass-bg common-button" data-bs-toggle="modal" data-bs-target="#portfolioModal">See More</button>
+                    <button id="bookBtn" class="glass-bg common-button" data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal">See More</button>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 portfolio-wrapper__portfolio-content-wrapper">
@@ -148,48 +162,88 @@
                     <img src="assets/images/UIUX.jpg" class="portfolio-img" alt="">
                     <br>
                     <p class="header text-start">Other Platform</p>
-                    <p class="text-content">I also utilize the Codepen and Dribbble. Visit the following page to view my further design, creation and side projects.</p>
+                    <p class="text-content">I also utilize the Codepen and Dribbble. Visit the following page to view my
+                        further design, creation and side projects.</p>
                     <br>
-                    <button class="glass-bg common-button">See More</button>
+                    <button class="glass-bg common-button" data-bs-toggle="modal"
+                        data-bs-target="#portfolioModalPlatform">See More</button>
                 </div>
             </div>
         </div>
     </div>
-  <!-- Modal for down load cv-->
-  <div class="modal fade" id="resumeDownload" tabindex="-1" aria-labelledby="resumeDownload" aria-hidden="true">
-    <div class="model-wrapper">
-        <div class="glass-bg modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title" id="exampleModalLabel">Download</h1>
-              </div>
-              <div class="modal-body">
-                Are you want to download my resume?
-              </div>
-              <div class="model-btn-gp">
-                <button type="button" class="glass-bg common-button model-close-btn" data-bs-dismiss="modal">Cancel</button>
-                <a href="assets/images/about_photo.jpg" download><button type="button" class="glass-bg common-button">OK</button></a>
-              </div>
-            </div>
-          </div>
-    </div>
-  </div>
-  <!-- Modal for Portfolio -->
-  <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModal" aria-hidden="true">
-    <div class="model-wrapper">
-        <div class="glass-bg modal-dialog">
-            <div class="modal-content">
-                <img id="porfolioModelImage" src="assets/images/food shop.png" alt="">
-                <p id="porfolioModelHeader" class="header text-center">Food Deli App</p>
-                <p id="porfolioModelContent" class="model-label text-center">A sample wireframe prototype created with Figma for a Demo Food Delivery application. To get the best user experience, recommend using a laptop or computer.</p>
-                <div class="model-btn-gp">
-                    <button type="button" class="glass-bg common-button model-close-btn" data-bs-dismiss="modal">Close</button>
-                    <a id="portfolioModelGo" href="" target="_blank"><button type="button" class="glass-bg common-button" data-bs-dismiss="modal">Get Start</button></a>
+    <!-- Modal for down load cv-->
+    <div class="modal fade" id="resumeDownload" tabindex="-1" aria-labelledby="resumeDownload" aria-hidden="true">
+        <div class="model-wrapper">
+            <div class="glass-bg modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="exampleModalLabel">Download</h1>
+                    </div>
+                    <div class="modal-body">
+                        Are you want to download my resume?
+                    </div>
+                    <div class="model-btn-gp">
+                        <button type="button" class="glass-bg common-button model-close-btn"
+                            data-bs-dismiss="modal">Cancel</button>
+                        <a href="assets/data/Ko Ko Kyaw.pdf" download="assets/data/Ko Ko Kyaw.pdf"
+                            target="_blank"><button type="button" class="glass-bg common-button">OK</button></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-  </div>
+    <!-- Modal for Portfolio -->
+    <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModal" aria-hidden="true">
+        <div class="model-wrapper">
+            <div class="glass-bg modal-dialog">
+                <div class="modal-content">
+                    <img id="porfolioModelImage" src="assets/images/food shop.png" alt="">
+                    <p id="porfolioModelHeader" class="header text-center">Food Deli App</p>
+                    <p id="porfolioModelContent" class="model-label text-center">A sample wireframe prototype created
+                        with Figma for a Demo Food Delivery application. To get the best user experience, recommend
+                        using a laptop or computer.</p>
+                    <div class="model-btn-gp">
+                        <button type="button" class="glass-bg common-button model-close-btn"
+                            data-bs-dismiss="modal">Close</button>
+                        <a id="portfolioModelGo" href="" target="_blank"><button type="button"
+                                class="glass-bg common-button" data-bs-dismiss="modal">Get Start</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio -->
+    <div class="modal fade" id="portfolioModalPlatform" tabindex="-1" aria-labelledby="portfolioModalPlatform"
+        aria-hidden="true">
+        <div class="model-wrapper">
+            <div class="glass-bg modal-dialog">
+                <div class="modal-content">
+                    <img id="porfolioModelImage" src="assets/images/food shop.png" alt="">
+                    <p id="porfolioModelHeader" class="header text-center">Other Platform</p>
+                    <p id="porfolioModelContent" class="model-label text-center">I also utilize the Codepen and
+                        Dribbble. Visit the following page to view my
+                        further design, creation and side projects.</p>
+                    <div class="row portfolio-link">
+                        <div class="col-12 col-sm-6">
+                            <a href="https://codepen.io/J0llY/pens/public" class="codepen-link" target="_blank"><button
+                                    class="common-button"><img src="assets/images/codepen.svg" class="codepenLink"
+                                        alt="">
+                                    CodePen</button></a>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <a href="https://dribbble.com/J0llY" class="dribbble-link" target="_blank"><button
+                                    class="common-button"><i class="bi bi-dribbble"></i> Dribbble</button></a>
+                        </div>
+                    </div>
+                    <div class="model-btn-gp">
+                        <button type="button" class="glass-bg common-button model-close-btn m-0"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="glass-bg footer">
         <p>Copyright© 2022 All rigths reserved</p>
