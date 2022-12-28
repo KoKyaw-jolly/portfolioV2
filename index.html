@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/skill.css">
     <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/contact.css">
 
 </head>
 
@@ -71,7 +70,7 @@
                         Photoshop, I can produce prototype, wireframe, and mockup designs. I am also skilled in
                         designing and developing templates by using HTML, CSS, JS, Bootstrap, jQuery, and Angular. I do
                         think that helping your company or organization with my innovative idea would be a triumph.</p>
-                    <button class="glass-bg common-button download-btn">Download CV</button>
+                    <button class="glass-bg common-button download-btn" data-bs-toggle="modal" data-bs-target="#resumeDownload">Download Resume</button>
                 </div>
             </div>
         </div>
@@ -128,57 +127,70 @@
                 <div class="glass-bg portfolio-wrapper__portfolio-content-wrapper__portfolio-content">
                     <img src="assets/images/food shop.png" class="portfolio-img" alt="">
                     <br>
-                    <p class="header text-start">Demo Food Deli App</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur elit. Nemo ut deleniti nostrum dolore fuga...</p>
+                    <p class="header text-start">Food Deli App</p>
+                    <p class="text-content">A sample wireframe prototype created with Figma for a Demo Food Delivery application. To get the best user experience, recommend using a laptop or computer.</p>
                     <br>
-                    <button class="glass-bg common-button">See More</button>
+                    <button id="foodBtn" class="glass-bg common-button" data-bs-toggle="modal" data-bs-target="#portfolioModal">See More</button>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 portfolio-wrapper__portfolio-content-wrapper">
                 <div class="glass-bg portfolio-wrapper__portfolio-content-wrapper__portfolio-content">
                     <img src="assets/images/book.png" class="portfolio-img" alt="">
                     <br>
-                    <p class="header text-start">The Book WebApp</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur elit. Nemo ut deleniti nostrum dolore fuga...</p>
+                    <p class="header text-start">Onile Book Store</p>
+                    <p class="text-content">Using HTML, CSS, Bootstrap, JS, jQuery, PHP, and MySql, this project was created. Onile Book Store is a project that has Client View and Admin Panel, CRUD feature, section and login features and many other feature. However, this project is a small, simple, and demo. Checkout is available on GitHub.</p>
                     <br>
-                    <button class="glass-bg common-button">See More</button>
+                    <button id="bookBtn" class="glass-bg common-button" data-bs-toggle="modal" data-bs-target="#portfolioModal">See More</button>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 portfolio-wrapper__portfolio-content-wrapper">
                 <div class="glass-bg portfolio-wrapper__portfolio-content-wrapper__portfolio-content">
                     <img src="assets/images/UIUX.jpg" class="portfolio-img" alt="">
                     <br>
-                    <p class="header text-start">Demo Food Deli App</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur elit. Nemo ut deleniti nostrum dolore fuga...</p>
+                    <p class="header text-start">Other Platform</p>
+                    <p class="text-content">I also utilize the Codepen and Dribbble. Visit the following page to view my further design, creation and side projects.</p>
                     <br>
                     <button class="glass-bg common-button">See More</button>
                 </div>
             </div>
         </div>
-        <!-- <div class="contact-wrapper">
-            <div class="glass-bg contact-wrapper__contact-content-wrapper">
-                <p class="header text-center content-me-text" style="margin-bottom: 30px;">Contact Me</p>
-                <form method="post" class="row">
-                    <div class="col-sm-6 mb-4">
-                        <label for="fullName" class="fw-bold form-label">Full Name</label>
-                        <input type="text" class="form-control" id="fullName" placeholder="eg. Ko Ko Kyaw">
-                    </div>
-                    <div class="col-sm-6 mb-4">
-                        <label for="email" class="fw-bold form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" placeholder="eg. name@example.com">
-                    </div>
-                    <div class="col-sm-12 mb-4">
-                        <label for="message" class="fw-bold form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="3"></textarea>
-                    </div>
-                    <div class="col-sm-12 mb-4">
-                        <button class="glass-bg common-button">Send</button>
-                    </div>
-                </form>
-            </div>
-
-        </div> -->
     </div>
+  <!-- Modal for down load cv-->
+  <div class="modal fade" id="resumeDownload" tabindex="-1" aria-labelledby="resumeDownload" aria-hidden="true">
+    <div class="model-wrapper">
+        <div class="glass-bg modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title" id="exampleModalLabel">Modal title</h1>
+              </div>
+              <div class="modal-body">
+                Are you want to download my resume?
+              </div>
+              <div class="model-btn-gp">
+                <button type="button" class="glass-bg common-button model-close-btn" data-bs-dismiss="modal">Cancel</button>
+                <a href="assets/images/about_photo.jpg" download><button type="button" class="glass-bg common-button">OK</button></a>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+  <!-- Modal for Portfolio -->
+  <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModal" aria-hidden="true">
+    <div class="model-wrapper">
+        <div class="glass-bg modal-dialog">
+            <div class="modal-content">
+                <img id="porfolioModelImage" src="assets/images/food shop.png" alt="">
+                <p id="porfolioModelHeader" class="header text-center">Food Deli App</p>
+                <p id="porfolioModelContent" class="model-label text-center">A sample wireframe prototype created with Figma for a Demo Food Delivery application. To get the best user experience, recommend using a laptop or computer.</p>
+                <div class="model-btn-gp">
+                    <button type="button" class="glass-bg common-button model-close-btn" data-bs-dismiss="modal">Close</button>
+                    <a id="portfolioModelGo" href="" target="_blank"><button type="button" class="glass-bg common-button" data-bs-dismiss="modal">Get Start</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
     <div class="glass-bg footer">
         <p>Copyright© 2022 All rigths reserved</p>
     </div>

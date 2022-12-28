@@ -31,6 +31,15 @@
     box-shadow: 0 7px 20px 0 rgb(0 0 0 / 30%);
 }
 
+.text-content{
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 3; 
+   -webkit-box-orient: vertical;
+}
+
 @media (max-width: 992px) {
     .portfolio-wrapper__portfolio-content-wrapper {
         padding-right: 20px;
